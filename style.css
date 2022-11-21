@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Ramabhadra', sans-serif;
 }
 
 nav {
@@ -10,20 +13,22 @@ nav {
     display: flex;
     align-items: center ;
     justify-items: space-between;
-    background-color: red;
+    background-color: #d52027;
+    position: absolute;
+
 }
 
 ul {
     width: 90%;
     height: 100%;
-    background-color: red;
+    background-color: #d52027;
     margin: auto;
-    border-left: 2px solid blue;
-    border-right: 2px solid blue;
     display: inherit;
     justify-content: space-around;
     align-items: center;
-}
+    box-shadow: 0 2px 6px rgb(0 0 0 / 25%);
+
+}   
 
 #logo {
     flex-basis: 60%;
@@ -44,9 +49,12 @@ a {
     align-items: center;
     height: 400px;
     justify-content: center;
-   
+    gap: 5%;
 }
 
+li {
+    z-index: 2;
+}
 .avatar {
     height: 100%;
     display: flex;
@@ -56,19 +64,51 @@ a {
 
 }
 
-.download-btn > button{
-    width: 70%;
-    margin: auto;
+.download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.download-btn > .btn{
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #1875f0;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}   
+
+.btn > img {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+}
 .avatar > img{
-    border-radius: 100%;
-    width: 218px;
-    height: 224px;
+    border-radius: 10px;
+    width: 250px;
+    height: 280px;
     
 }
 
 .head-text{
     font-size: 21px;
+    display: inherit;
+    flex-direction: column;
+    text-align: center;
+    ;
 }
 
+section { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    transform: translate(0, 10%);
+}
