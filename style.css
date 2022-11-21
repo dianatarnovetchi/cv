@@ -18,10 +18,11 @@ nav {
 
 }
 
-ul {
+#nav-links{
     width: 90%;
     height: 100%;
     background-color: #d52027;
+    list-style-type: none;
     margin: auto;
     display: inherit;
     justify-content: space-around;
@@ -40,9 +41,7 @@ a {
     color: white;
     font-size: 25px;
 }
-#nav-links {
-    list-style-type: none;
-}
+
 
 .main-content { 
     display: flex;
